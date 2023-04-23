@@ -9,14 +9,4 @@ model Color {
   id    Int     @id @default(autoincrement())
   name  String
 }
-seed {
-  // Define the name of the seed file
-  migration1 {
-    // Define the data to be seeded
-    create: [
-      { name: "Red" },
-      { name: "Blue" },
-      { name: "Green" }
-    ]
-  }
-}
+
