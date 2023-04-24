@@ -33,6 +33,14 @@ app.get('/colors', async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+// Endpoint to fetch red color
+app.get('/colors/red', async (req, res) => {
+  try {
+    res.send("red")
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
 
 // Endpoint to print hello world
 app.get('/user', async (req, res) => {
